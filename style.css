@@ -1,0 +1,56 @@
+.page-wrap {}
+
+#waves-background {
+  background-image: url('images/waves-background.jpg');
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  margin-top: -67px
+}
+
+img {
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  background-color: hsla(360, 100%, 0%, 0.0);
+  transition: background-color 500ms linear;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+nav.scrolled {
+  background: #fff !important;
+  transition: background-color 1000ms linear;
+}
+
+#learn-fixed {
+  top: 50%;
+  transform: translate(0%, -50%);
+  position: absolute;
+  /* background-color: hsla(360, 100%, 0%, 0.3); */
+  transition: background-color 1000ms linear;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#inline {
+  display: inline;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -66px;
+  visibility: hidden;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.small-port {
+  object-fit: cover;
+  height: 250px;
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>
+        <Zach McKenna />
+    </title>
+    <meta name="description" content="Zach McKenna's Portfolio">
+    <meta name="author" content="Zach McKenna">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+
+</head>
+
+<body class="" onscroll="scrolling()">
+    <div class="page-wrap w-full h-screen">
+        <nav class="flex items-center justify-between flex-wrap py-4 px-24 w-full text-white animated fadeInDown z-index-10"
+            id="navbar">
+            <div class="flex items-center flex-no-shrink mr-6">
+                <span class="font-semibold text-3xl tracking-tight">Zach McKenna</span>
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-lg lg:flex-grow">
+                    <a href="resume.pdf"
+                        class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey no-underline float-right text-white nav-link"
+                        id="nav-link-1">
+                        Résumé
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey mr-4 no-underline float-right text-white nav-link"
+                        id="nav-link-2">
+                        Portfolio
+                    </a>
+                    <a href="#responsive-header"
+                        class="block mt-4 lg:inline-block lg:mt-0 hover:text-grey mr-4 no-underline float-right text-white nav-link"
+                        id="nav-link-3">
+                        About Me
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="w-full text-center text-white text-3xl text-bold py-4" id="learn-fixed">
+            <p class="animated fadeIn delay-1s" id="inline">Designer...</p>
+            <p class="animated fadeIn delay-2s" id="inline">Programmer...</p>
+            <p class="animated fadeIn delay-3s" id="inline">Maker...</p>
+            <div>
+                <a data-easing="easeInOutQuad" class="no-underline hvr-hang" onclick="startAnimations();" href="#port">
+                    <p class="animated fadeIn delay-4s mt-12 text-white no-underline text-xl">Learn More</p>
+                    <i class="material-icons animated fadeIn delay-4s text-white no-underline"
+                        style="font-size: 18px;">keyboard_arrow_down</i>
+                </a>
+            </div>
+
+        </div>
+        <img src="images/taryn-kaahanui-1361547-unsplash.jpg" class="w-full h-screen alt=" Background">
+    </div>
+    <div class="flex px-20">
+        <a class="anchor" id="port"></a>
+        <p class="text-xl text-semibold text-grey-darker py-10" id="portfolio">Projects:</p>
+    </div>
+    <div class="flex mb-4 px-12">
+        <div class="w-1/2 p-12 pt-0" id="xcl-card">
+            <div class="w-full h-full rounded overflow-hidden border border-grey-light">
+                <div class="w-full p-4">
+                    <img class="w-full shadow-md" src="images/xcl-portfolio.png" alt="Sunset in the mountains">
+                </div>
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">XCL Resources</div>
+                    <p class="text-grey-darker text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                        et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="text-grey-darker text-md" href="http://xcl.zachmckenna.design">Visit Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 p-12 pt-0">
+            <div class="w-full h-full rounded overflow-hidden border border-grey-light" id="turbo-card">
+                <div class="w-full p-4">
+                    <img class="w-full shadow-md" src="images/turbo-portfolio.png" alt="Sunset in the mountains">
+                </div>
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Turbo</div>
+                    <p class="text-grey-darker text-base">
+                        Turbo is a web app that I have been working on for a while now. It is a site for car
+                        enthusiasts to manage and track their car's maintenance records and projects. It was built
+                        with a Ruby on Rails backend, and Materializecss was used for the framework.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="text-grey-darker text-md" href="https://turboapp.me">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mb-4 px-12">
+        <div class="w-1/3 p-12 pt-0">
+            <div class="w-full h-full rounded overflow-hidden border border-grey-light">
+                <div class="w-full p-4">
+                    <img class="w-full shadow-md small-port" src="images/2wheel.JPG" alt="Sunset in the mountains">
+                </div>
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">2 Wheeled Robot</div>
+                    <p class="text-grey-darker text-base">
+                        This two wheeled robot was a recent TSA project designed to complete an obstacle course.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="text-grey-darker text-md">Coming Soon!</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/3 p-12 pt-0">
+            <div class="w-full h-full rounded overflow-hidden border border-grey-light">
+                <div class="w-full p-4">
+                    <img class="w-full shadow-md small-port" src="images/ds4.jpg" alt="Sunset in the mountains">
+                </div>
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">DS4 Controller with Arduino</div>
+                    <p class="text-grey-darker text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores
+                            et perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="px-6 py-4">
+                    <a class="text-grey-darker text-md">Coming Soon!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-1/3 p-12 pt-0">
+            
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000
+        });
+
+        function scrolling() {
+            var element = document.getElementById("navbar");
+            element.classList.add("scrolled");
+            element.classList.add("text-black");
+            element.classList.remove("text-white");
+            element.classList.add("shadow-md");
+            var nav1 = document.getElementById("nav-link-1");
+            nav1.classList.remove("text-white");
+            nav1.classList.add("text-black");
+            var nav2 = document.getElementById("nav-link-2");
+            nav2.classList.remove("text-white");
+            nav2.classList.add("text-black");
+            var nav3 = document.getElementById("nav-link-3");
+            nav3.classList.remove("text-white");
+            nav3.classList.add("text-black");
+
+            if ($(window).scrollTop() == 0) {
+                var element = document.getElementById("navbar");
+                element.classList.remove("scrolled");
+                element.classList.remove("text-black");
+                element.classList.add("text-white");
+                element.classList.remove("shadow-md");
+                var nav1 = document.getElementById("nav-link-1");
+                nav1.classList.add("text-white");
+                nav1.classList.remove("text-black");
+                var nav2 = document.getElementById("nav-link-2");
+                nav2.classList.add("text-white");
+                nav2.classList.remove("text-black");
+                var nav3 = document.getElementById("nav-link-3");
+                nav3.classList.add("text-white");
+                nav3.classList.remove("text-black");
+            }
+        }
+
+        // function startAnimations() {
+        //     var xclcard = document.getElementById("xcl-card");
+        //     xclcard.classList.add("animated");
+        //     xclcard.classList.add("fadeInDown");
+        //     xclcard.classList.add("delay-1s");
+        // }
+    </script>
+</body>
+
+</html>

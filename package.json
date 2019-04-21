@@ -1,0 +1,11 @@
+{
+  "name": "zachmckenna.design",
+  "version": "1.0.0",
+  "description": "A basic static site for showcasing my services and my previous websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach McKenna",
+  "license": "ISC"
+}
